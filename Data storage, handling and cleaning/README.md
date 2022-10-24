@@ -1,5 +1,0 @@
-- If the project only requires a subset of individuals from the genotype files, PLINK or bcftools can be used to exctract the desired samples (Remember to use PLINK2.0 if you want to preserve dosage and phase information) - this example illustrates how to extract individuals with a certain genotype at a particular locus
-- Note the #SBATCH lines, accounts and names can be changed for project or script relevance
-- For this example, both imputed and not imputed files are utilized (each serve different purposes)
-- For more information on PLINK: https://www.cog-genomics.org/plink/2.0/
-- For more information on bcftools:https://samtools.github.io/bcftools/bcftools.html
