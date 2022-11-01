@@ -8,7 +8,7 @@
 
 ## Script and output notes
 
-***extract-snp.sh****
+***extract-snp.sh***
 
 - This will generate:
     1. **{outputprefix_imputed_Samplesextracted}.bed**
@@ -26,7 +26,7 @@
 - Now these .txt files will be used on the original imputation data (all 22 chromosomes) and not imputed files to ensure only individuals with the desired genotype (for which phenotype data is available for) are used
 - Can use for loops or job array 
 
-***samples2keep-notimputed.sh
+***samples2keep-notimputed.sh***
 
 ***notimputed-makebed.sh***
 
