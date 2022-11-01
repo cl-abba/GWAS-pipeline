@@ -6,7 +6,7 @@
 - For more information on PLINK: https://www.cog-genomics.org/plink/2.0/
 - For more information on bcftools:https://samtools.github.io/bcftools/bcftools.html
 
-## Script and output notes
+## Script order and output notes
 
 ***extract-snp.sh***
 
