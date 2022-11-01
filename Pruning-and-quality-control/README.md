@@ -1,4 +1,4 @@
-# Pruning and quality control (QC)
+# 2. Pruning and quality control (QC)
 
 ## Script order and output notes
 
