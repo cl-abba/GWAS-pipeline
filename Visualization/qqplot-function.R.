@@ -1,0 +1,30 @@
+# Run the function to generate and save a qqplot (adapted from Dr. Frida Lona Durazo's GitHub: https://github.com/ape4fld/parra-lab):
+
+## path_to_folder: path where the data is saved.
+## file_to_read1: text file with one column (no header) of p-values.
+## file_name: suffix of choice for the plot's name.
+## lambda_pos: position of the lambda value on the Y-axis in the qqplot.
+
+post_gwas_plots <- function(path_to_folder, file_to_read1, file_name, lambda_pos) {
+  
+  setwd(path_to_folder)
+  
+  # Read file1:
+  p_values <- read.delim(file = file_to_read1, header = TRUE)
+  colnames(p_values) <- "pvalue"
+  
+  # Genomic control (lambda):
+  chisq <- qchisq(1-p_values$pvalue,1)
+  lambda_value <- median(chisq)/qchisq(0.5,1)
+  lambda_value <- round(lambda_value, digits = 4)
+  
+  qq_filename <- paste("qqplot-", file_name, ".jpeg", sep="")
+  
+  # qqplot:
+  jpeg(filename = qq_filename, width = 500, height = 500)
+  qq(p_values$pvalue, cex.axis = 1.5)
+  text(x = 1, y = lambda_pos, labels = paste("Lambda =", lambda_value, sep=" "))
+  dev.off()
+  
+  print(lambda_value)
+}
