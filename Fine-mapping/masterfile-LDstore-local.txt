@@ -1,0 +1,4 @@
+z;bgen;bgi;ld;n_samples
+sumstats-for-finemap-subset1.z;finemap-subset1.bgen;finemap-subset1.bgen.bgi;subset1.ld;1234
+sumstats-for-finemap-subset2.z;finemap-subset2.bgen;finemap-subset2.bgen.bgi;subset2.ld;1234
+sumstats-for-finemap-subset3.z;finemap-subset3.bgen;finemap-subset3.bgen.bgi;subset3.ld;1234
